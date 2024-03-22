@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		523EBCEB2BAD8877008624CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBCEA2BAD8877008624CE /* AppDelegate.swift */; };
+		523EBCED2BAD8877008624CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBCEC2BAD8877008624CE /* SceneDelegate.swift */; };
+		523EBCEF2BAD8877008624CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBCEE2BAD8877008624CE /* ViewController.swift */; };
+		523EBCF22BAD8877008624CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523EBCF02BAD8877008624CE /* Main.storyboard */; };
+		523EBCF42BAD887B008624CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523EBCF32BAD887B008624CE /* Assets.xcassets */; };
+		523EBCF72BAD887B008624CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523EBCF52BAD887B008624CE /* LaunchScreen.storyboard */; };
+		523EBD022BAD887B008624CE /* vssforVKontakteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBD012BAD887B008624CE /* vssforVKontakteTests.swift */; };
+		523EBD0C2BAD887B008624CE /* vssforVKontakteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBD0B2BAD887B008624CE /* vssforVKontakteUITests.swift */; };
+		523EBD0E2BAD887B008624CE /* vssforVKontakteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBD0D2BAD887B008624CE /* vssforVKontakteUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		523EBCFE2BAD887B008624CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 523EBCDF2BAD8877008624CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 523EBCE62BAD8877008624CE;
+			remoteInfo = vssforVKontakte;
+		};
+		523EBD082BAD887B008624CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 523EBCDF2BAD8877008624CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 523EBCE62BAD8877008624CE;
+			remoteInfo = vssforVKontakte;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		523EBCE72BAD8877008624CE /* vssforVKontakte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vssforVKontakte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		523EBCEA2BAD8877008624CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		523EBCEC2BAD8877008624CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		523EBCEE2BAD8877008624CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		523EBCF12BAD8877008624CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		523EBCF32BAD887B008624CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		523EBCF62BAD887B008624CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		523EBCF82BAD887B008624CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		523EBCFD2BAD887B008624CE /* vssforVKontakteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vssforVKontakteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		523EBD012BAD887B008624CE /* vssforVKontakteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vssforVKontakteTests.swift; sourceTree = "<group>"; };
+		523EBD072BAD887B008624CE /* vssforVKontakteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vssforVKontakteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		523EBD0B2BAD887B008624CE /* vssforVKontakteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vssforVKontakteUITests.swift; sourceTree = "<group>"; };
+		523EBD0D2BAD887B008624CE /* vssforVKontakteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vssforVKontakteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		523EBCE42BAD8877008624CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523EBCFA2BAD887B008624CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523EBD042BAD887B008624CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		523EBCDE2BAD8877008624CE = {
+			isa = PBXGroup;
+			children = (
+				523EBCE92BAD8877008624CE /* vssforVKontakte */,
+				523EBD002BAD887B008624CE /* vssforVKontakteTests */,
+				523EBD0A2BAD887B008624CE /* vssforVKontakteUITests */,
+				523EBCE82BAD8877008624CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		523EBCE82BAD8877008624CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				523EBCE72BAD8877008624CE /* vssforVKontakte.app */,
+				523EBCFD2BAD887B008624CE /* vssforVKontakteTests.xctest */,
+				523EBD072BAD887B008624CE /* vssforVKontakteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		523EBCE92BAD8877008624CE /* vssforVKontakte */ = {
+			isa = PBXGroup;
+			children = (
+				523EBCEA2BAD8877008624CE /* AppDelegate.swift */,
+				523EBCEC2BAD8877008624CE /* SceneDelegate.swift */,
+				523EBCEE2BAD8877008624CE /* ViewController.swift */,
+				523EBCF02BAD8877008624CE /* Main.storyboard */,
+				523EBCF32BAD887B008624CE /* Assets.xcassets */,
+				523EBCF52BAD887B008624CE /* LaunchScreen.storyboard */,
+				523EBCF82BAD887B008624CE /* Info.plist */,
+			);
+			path = vssforVKontakte;
+			sourceTree = "<group>";
+		};
+		523EBD002BAD887B008624CE /* vssforVKontakteTests */ = {
+			isa = PBXGroup;
+			children = (
+				523EBD012BAD887B008624CE /* vssforVKontakteTests.swift */,
+			);
+			path = vssforVKontakteTests;
+			sourceTree = "<group>";
+		};
+		523EBD0A2BAD887B008624CE /* vssforVKontakteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				523EBD0B2BAD887B008624CE /* vssforVKontakteUITests.swift */,
+				523EBD0D2BAD887B008624CE /* vssforVKontakteUITestsLaunchTests.swift */,
+			);
+			path = vssforVKontakteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		523EBCE62BAD8877008624CE /* vssforVKontakte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523EBD112BAD887B008624CE /* Build configuration list for PBXNativeTarget "vssforVKontakte" */;
+			buildPhases = (
+				523EBCE32BAD8877008624CE /* Sources */,
+				523EBCE42BAD8877008624CE /* Frameworks */,
+				523EBCE52BAD8877008624CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vssforVKontakte;
+			productName = vssforVKontakte;
+			productReference = 523EBCE72BAD8877008624CE /* vssforVKontakte.app */;
+			productType = "com.apple.product-type.application";
+		};
+		523EBCFC2BAD887B008624CE /* vssforVKontakteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523EBD142BAD887B008624CE /* Build configuration list for PBXNativeTarget "vssforVKontakteTests" */;
+			buildPhases = (
+				523EBCF92BAD887B008624CE /* Sources */,
+				523EBCFA2BAD887B008624CE /* Frameworks */,
+				523EBCFB2BAD887B008624CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				523EBCFF2BAD887B008624CE /* PBXTargetDependency */,
+			);
+			name = vssforVKontakteTests;
+			productName = vssforVKontakteTests;
+			productReference = 523EBCFD2BAD887B008624CE /* vssforVKontakteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		523EBD062BAD887B008624CE /* vssforVKontakteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523EBD172BAD887B008624CE /* Build configuration list for PBXNativeTarget "vssforVKontakteUITests" */;
+			buildPhases = (
+				523EBD032BAD887B008624CE /* Sources */,
+				523EBD042BAD887B008624CE /* Frameworks */,
+				523EBD052BAD887B008624CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				523EBD092BAD887B008624CE /* PBXTargetDependency */,
+			);
+			name = vssforVKontakteUITests;
+			productName = vssforVKontakteUITests;
+			productReference = 523EBD072BAD887B008624CE /* vssforVKontakteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		523EBCDF2BAD8877008624CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					523EBCE62BAD8877008624CE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					523EBCFC2BAD887B008624CE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 523EBCE62BAD8877008624CE;
+					};
+					523EBD062BAD887B008624CE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 523EBCE62BAD8877008624CE;
+					};
+				};
+			};
+			buildConfigurationList = 523EBCE22BAD8877008624CE /* Build configuration list for PBXProject "vssforVKontakte" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 523EBCDE2BAD8877008624CE;
+			productRefGroup = 523EBCE82BAD8877008624CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				523EBCE62BAD8877008624CE /* vssforVKontakte */,
+				523EBCFC2BAD887B008624CE /* vssforVKontakteTests */,
+				523EBD062BAD887B008624CE /* vssforVKontakteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		523EBCE52BAD8877008624CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523EBCF72BAD887B008624CE /* LaunchScreen.storyboard in Resources */,
+				523EBCF42BAD887B008624CE /* Assets.xcassets in Resources */,
+				523EBCF22BAD8877008624CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523EBCFB2BAD887B008624CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523EBD052BAD887B008624CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		523EBCE32BAD8877008624CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523EBCEF2BAD8877008624CE /* ViewController.swift in Sources */,
+				523EBCEB2BAD8877008624CE /* AppDelegate.swift in Sources */,
+				523EBCED2BAD8877008624CE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523EBCF92BAD887B008624CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523EBD022BAD887B008624CE /* vssforVKontakteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523EBD032BAD887B008624CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523EBD0C2BAD887B008624CE /* vssforVKontakteUITests.swift in Sources */,
+				523EBD0E2BAD887B008624CE /* vssforVKontakteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		523EBCFF2BAD887B008624CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 523EBCE62BAD8877008624CE /* vssforVKontakte */;
+			targetProxy = 523EBCFE2BAD887B008624CE /* PBXContainerItemProxy */;
+		};
+		523EBD092BAD887B008624CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 523EBCE62BAD8877008624CE /* vssforVKontakte */;
+			targetProxy = 523EBD082BAD887B008624CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		523EBCF02BAD8877008624CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				523EBCF12BAD8877008624CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		523EBCF52BAD887B008624CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				523EBCF62BAD887B008624CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		523EBD0F2BAD887B008624CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		523EBD102BAD887B008624CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		523EBD122BAD887B008624CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WBT5SBFY4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vssforVKontakte/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anastasiiatiutinova.vssforVKontakte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		523EBD132BAD887B008624CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WBT5SBFY4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vssforVKontakte/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anastasiiatiutinova.vssforVKontakte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		523EBD152BAD887B008624CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WBT5SBFY4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anastasiiatiutinova.vssforVKontakteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vssforVKontakte.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vssforVKontakte";
+			};
+			name = Debug;
+		};
+		523EBD162BAD887B008624CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WBT5SBFY4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anastasiiatiutinova.vssforVKontakteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vssforVKontakte.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/vssforVKontakte";
+			};
+			name = Release;
+		};
+		523EBD182BAD887B008624CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WBT5SBFY4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anastasiiatiutinova.vssforVKontakteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vssforVKontakte;
+			};
+			name = Debug;
+		};
+		523EBD192BAD887B008624CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WBT5SBFY4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anastasiiatiutinova.vssforVKontakteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vssforVKontakte;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		523EBCE22BAD8877008624CE /* Build configuration list for PBXProject "vssforVKontakte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523EBD0F2BAD887B008624CE /* Debug */,
+				523EBD102BAD887B008624CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523EBD112BAD887B008624CE /* Build configuration list for PBXNativeTarget "vssforVKontakte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523EBD122BAD887B008624CE /* Debug */,
+				523EBD132BAD887B008624CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523EBD142BAD887B008624CE /* Build configuration list for PBXNativeTarget "vssforVKontakteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523EBD152BAD887B008624CE /* Debug */,
+				523EBD162BAD887B008624CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523EBD172BAD887B008624CE /* Build configuration list for PBXNativeTarget "vssforVKontakteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523EBD182BAD887B008624CE /* Debug */,
+				523EBD192BAD887B008624CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 523EBCDF2BAD8877008624CE /* Project object */;
+}
