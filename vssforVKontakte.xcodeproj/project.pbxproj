@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		523EBCEB2BAD8877008624CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBCEA2BAD8877008624CE /* AppDelegate.swift */; };
 		523EBCED2BAD8877008624CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBCEC2BAD8877008624CE /* SceneDelegate.swift */; };
-		523EBCEF2BAD8877008624CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBCEE2BAD8877008624CE /* ViewController.swift */; };
-		523EBCF22BAD8877008624CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523EBCF02BAD8877008624CE /* Main.storyboard */; };
+		523EBCEF2BAD8877008624CE /* InputParametersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBCEE2BAD8877008624CE /* InputParametersViewController.swift */; };
 		523EBCF42BAD887B008624CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523EBCF32BAD887B008624CE /* Assets.xcassets */; };
 		523EBCF72BAD887B008624CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523EBCF52BAD887B008624CE /* LaunchScreen.storyboard */; };
 		523EBD022BAD887B008624CE /* vssforVKontakteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBD012BAD887B008624CE /* vssforVKontakteTests.swift */; };
@@ -39,8 +38,7 @@
 		523EBCE72BAD8877008624CE /* vssforVKontakte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vssforVKontakte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		523EBCEA2BAD8877008624CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		523EBCEC2BAD8877008624CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		523EBCEE2BAD8877008624CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		523EBCF12BAD8877008624CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		523EBCEE2BAD8877008624CE /* InputParametersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputParametersViewController.swift; sourceTree = "<group>"; };
 		523EBCF32BAD887B008624CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523EBCF62BAD887B008624CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		523EBCF82BAD887B008624CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,8 +99,7 @@
 			children = (
 				523EBCEA2BAD8877008624CE /* AppDelegate.swift */,
 				523EBCEC2BAD8877008624CE /* SceneDelegate.swift */,
-				523EBCEE2BAD8877008624CE /* ViewController.swift */,
-				523EBCF02BAD8877008624CE /* Main.storyboard */,
+				523EBCEE2BAD8877008624CE /* InputParametersViewController.swift */,
 				523EBCF32BAD887B008624CE /* Assets.xcassets */,
 				523EBCF52BAD887B008624CE /* LaunchScreen.storyboard */,
 				523EBCF82BAD887B008624CE /* Info.plist */,
@@ -233,7 +230,6 @@
 			files = (
 				523EBCF72BAD887B008624CE /* LaunchScreen.storyboard in Resources */,
 				523EBCF42BAD887B008624CE /* Assets.xcassets in Resources */,
-				523EBCF22BAD8877008624CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				523EBCEF2BAD8877008624CE /* ViewController.swift in Sources */,
+				523EBCEF2BAD8877008624CE /* InputParametersViewController.swift in Sources */,
 				523EBCEB2BAD8877008624CE /* AppDelegate.swift in Sources */,
 				523EBCED2BAD8877008624CE /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		523EBCF02BAD8877008624CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				523EBCF12BAD8877008624CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		523EBCF52BAD887B008624CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +430,6 @@
 				INFOPLIST_FILE = vssforVKontakte/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +457,6 @@
 				INFOPLIST_FILE = vssforVKontakte/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
