@@ -10,6 +10,7 @@ import UIKit
 class InputParametersViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - Properties
+    let nameMainScreen = UILabel()
     let groupSizeTextField = UITextField()
     let infectionFactorTextField = UITextField()
     let recalculationPeriodTextField = UITextField()
@@ -21,6 +22,7 @@ class InputParametersViewController: UIViewController, UITextFieldDelegate {
         view.backgroundColor = .systemBackground
         setupStackView()
         setupUIcomponents()
+        setupNameMainScreen()
     }
 
     // MARK: - Setup
@@ -29,7 +31,7 @@ class InputParametersViewController: UIViewController, UITextFieldDelegate {
         configureTextField(infectionFactorTextField, placeholder: "InfectionFactor")
         configureTextField(recalculationPeriodTextField, placeholder: "Recalculation Period (T)")
         
-        runSimulationButton.setTitle("Запустить моделирование", for: .normal)
+        runSimulationButton.setTitle("Start simulation", for: .normal)
         runSimulationButton.setTitleColor(.black, for: .normal)
         runSimulationButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         runSimulationButton.addTarget(self, action: #selector(runSimulationButtonTapped), for: .touchUpInside)
@@ -61,6 +63,19 @@ class InputParametersViewController: UIViewController, UITextFieldDelegate {
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
+    
+    private func setupNameMainScreen() {
+        nameMainScreen.text = "Virus spread simulator"
+        nameMainScreen.font = .boldSystemFont(ofSize: 20)
+        nameMainScreen.textColor = .black
+        nameMainScreen.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(nameMainScreen)
+        
+        NSLayoutConstraint.activate([
+            nameMainScreen.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            nameMainScreen.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor)
+        ])
+    }
 
     private func configureTextField(_ textField: UITextField, placeholder: String) {
         textField.placeholder = placeholder
@@ -79,3 +94,24 @@ class InputParametersViewController: UIViewController, UITextFieldDelegate {
     }
 }
 
+
+
+import SwiftUI
+
+struct FlowProvider: PreviewProvider {
+    static var previews: some View {
+        InputParameters().edgesIgnoringSafeArea(.all)
+    }
+    
+    struct InputParameters: UIViewControllerRepresentable {
+        
+        let firstScreen = InputParametersViewController()
+        func makeUIViewController(context: UIViewControllerRepresentableContext<FlowProvider.InputParameters>) -> InputParametersViewController {
+            return firstScreen
+        }
+        
+        func updateUIViewController(_ uiViewController: FlowProvider.InputParameters.UIViewControllerType, context: UIViewControllerRepresentableContext<FlowProvider.InputParameters>) {
+            
+        }
+    }
+}
