@@ -17,6 +17,8 @@
 		523EBD0E2BAD887B008624CE /* vssforVKontakteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523EBD0D2BAD887B008624CE /* vssforVKontakteUITestsLaunchTests.swift */; };
 		528FA3092BB30190009794AD /* SimulationParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA3082BB30190009794AD /* SimulationParameters.swift */; };
 		528FA30B2BB30325009794AD /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA30A2BB30325009794AD /* People.swift */; };
+		528FA30D2BB31D9B009794AD /* ResultStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA30C2BB31D9B009794AD /* ResultStatisticsView.swift */; };
+		528FA30F2BB32379009794AD /* ExtensionUIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA30E2BB32379009794AD /* ExtensionUIViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		523EBD0D2BAD887B008624CE /* vssforVKontakteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vssforVKontakteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		528FA3082BB30190009794AD /* SimulationParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationParameters.swift; sourceTree = "<group>"; };
 		528FA30A2BB30325009794AD /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		528FA30C2BB31D9B009794AD /* ResultStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStatisticsView.swift; sourceTree = "<group>"; };
+		528FA30E2BB32379009794AD /* ExtensionUIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				523EBCEC2BAD8877008624CE /* SceneDelegate.swift */,
 				523EBCEE2BAD8877008624CE /* InputParametersViewController.swift */,
 				528FA30A2BB30325009794AD /* People.swift */,
+				528FA30C2BB31D9B009794AD /* ResultStatisticsView.swift */,
+				528FA30E2BB32379009794AD /* ExtensionUIViews.swift */,
 				528FA3082BB30190009794AD /* SimulationParameters.swift */,
 				528FA3072BB3015F009794AD /* Controllers */,
 				523EBCF32BAD887B008624CE /* Assets.xcassets */,
@@ -271,7 +277,9 @@
 				523EBCEF2BAD8877008624CE /* InputParametersViewController.swift in Sources */,
 				523EBCEB2BAD8877008624CE /* AppDelegate.swift in Sources */,
 				523EBCED2BAD8877008624CE /* SceneDelegate.swift in Sources */,
+				528FA30D2BB31D9B009794AD /* ResultStatisticsView.swift in Sources */,
 				528FA3092BB30190009794AD /* SimulationParameters.swift in Sources */,
+				528FA30F2BB32379009794AD /* ExtensionUIViews.swift in Sources */,
 				528FA30B2BB30325009794AD /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
