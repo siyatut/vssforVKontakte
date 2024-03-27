@@ -10,7 +10,6 @@ import UIKit
 final class PeopleCollectionCell: UICollectionViewCell {
     
     // MARK: - Views
-    
     private let imageView: UIImageView = {
         let view = UIImageView()
         view.image = UIImage(systemName: "person.fill")
@@ -21,7 +20,6 @@ final class PeopleCollectionCell: UICollectionViewCell {
     
     
     // MARK: - Init
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -32,16 +30,14 @@ final class PeopleCollectionCell: UICollectionViewCell {
 
     
     // MARK: - Public methods
-    
     func setupCell(isInfected: Bool) {
-        configureApperance()
+        configureAppearance()
         configureLayout()
         reloadCell(isInfected: isInfected)
     }
 
     
     // MARK: - Private methods
-    
     private func reloadCell(isInfected: Bool) {
         imageView.tintColor = isInfected ? .red : .black
     }
@@ -49,7 +45,7 @@ final class PeopleCollectionCell: UICollectionViewCell {
 
 extension PeopleCollectionCell {
     
-    func configureApperance() {
+    func configureAppearance() {
         self.backgroundColor = .clear
         addViews(imageView)
     }

@@ -10,11 +10,9 @@ import UIKit
 final class ResultStatisticsView: UIView {
     
     // MARK: - Properties
-    
     private var startValue: Double = 0
     
     // MARK: - Views for describing statistics
-    
     private let backgroundView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemMint
@@ -45,7 +43,6 @@ final class ResultStatisticsView: UIView {
     }()
     
     // MARK: - Init
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureViews()
@@ -61,7 +58,6 @@ final class ResultStatisticsView: UIView {
     }
     
     // MARK: - Public methods
-    
     func reloadView(_ newValue: Int) {
         valuePeople.text = "\(newValue)"
         let percentValue: Double

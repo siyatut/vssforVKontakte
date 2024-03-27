@@ -8,7 +8,6 @@
 import UIKit
 
 protocol SimulationDelegate: AnyObject {
-    
     func reloadPeopleViews(for indexes: [Int])
 }
 
@@ -17,11 +16,8 @@ final class SimulationController {
     static let shared = SimulationController()
     private init() {}
     
-    
     // MARK: - Properties
-    
     private var parameters: SimulationParameters!
-    
     private var people: [People] = []
     private var indexesForReload: [Int] = []
     private var indexesOfInfectedPeople: [Int] = []
@@ -33,17 +29,14 @@ final class SimulationController {
     
     
     // MARK: - Public methods
-    
     func startCalculation(with parameters: SimulationParameters, delegate: SimulationDelegate) {
-        
         self.parameters = parameters
         self.simulationDelegate = delegate
-        createTemplateHumans()
+        createTemplatePeople()
         startTimer()
     }
     
-    func didTapHuman(at index: Int) {
-        
+    func didTapPerson(at index: Int) {
         guard index <= people.count else { return }
         
         if people[index].tryInfect() {
@@ -52,7 +45,7 @@ final class SimulationController {
         }
     }
     
-    func getHumansSize() -> Int {
+    func getPeopleSize() -> Int {
         return people.count
     }
     
@@ -73,8 +66,7 @@ final class SimulationController {
     
     
     // MARK: - Private methods
-    
-    private func createTemplateHumans() {
+    private func createTemplatePeople() {
         people = [People](repeating: People(), count: parameters.groupSize)
     }
     
@@ -84,12 +76,11 @@ final class SimulationController {
     }
     
     @objc private func calculateInfection(){
-        
         guard indexesOfInfectedPeople.count != people.count else { return }
         
         queue.async {
             for h in self.indexesOfInfectedPeople {
-                self.infectNearHumans(for: h, times: self.parameters.infectionFactor)
+                self.infectNearPeople(for: h, times: self.parameters.infectionFactor)
             }
 
             DispatchQueue.main.async {
@@ -100,26 +91,24 @@ final class SimulationController {
         self.indexesForReload = []
     }
     
-    private func infectNearHumans(for index: Int, times: Int) {
-        
+    private func infectNearPeople(for index: Int, times: Int) {
         guard times > 0 else { return }
         
-        let NearHumanIndexes = getNearIndexes(for: index)
+        let NearPeopleIndexes = getNearIndexes(for: index)
         
-        let n = NearHumanIndexes[Int.random(in: 0..<NearHumanIndexes.count)]
+        let n = NearPeopleIndexes[Int.random(in: 0..<NearPeopleIndexes.count)]
         if n >= 0 && n < people.count {
             if people[n].tryInfect() {
                 indexesOfInfectedPeople.append(n)
                 indexesForReload.append(n)
             }
             if Bool.random() {
-                infectNearHumans(for: n, times: times - 1)
+                infectNearPeople(for: n, times: times - 1)
             }
         }
     }
     
     private func getNearIndexes(for index: Int) -> [Int] {
-        
         var indexes = [index+7, index-7]
         
         if index % 7 == 0 {

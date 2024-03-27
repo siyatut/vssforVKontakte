@@ -10,16 +10,12 @@ import UIKit
 final class SimulationViewController: UIViewController {
     
     // MARK: - Properties
-    
     private var parameters: SimulationParameters!
-    
     private var currentTime: Int = 0
-    
     private var timer: Timer = Timer()
     
     
     // MARK: Views
-    
     private let backButton: UIButton = {
         let button = UIButton()
         button.backgroundColor = .systemMint
@@ -67,7 +63,6 @@ final class SimulationViewController: UIViewController {
     
     
     // MARK: - Init
-    
     convenience init(parameters: SimulationParameters) {
         self.init()
         self.parameters = parameters
@@ -75,17 +70,15 @@ final class SimulationViewController: UIViewController {
     
     
     // MARK: - Lifecycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         SimulationController.shared.startCalculation(with: parameters, delegate: self)
-        configureApperance()
+        configureAppearance()
     }
     
     
     // MARK: - Private methods
-    
     @objc private func backButtonTapped() {
         SimulationController.shared.stopCalculation()
         timer.invalidate()
@@ -106,7 +99,6 @@ final class SimulationViewController: UIViewController {
 extension SimulationViewController: SimulationDelegate {
     
     func reloadPeopleViews(for indexes: [Int]) {
-        
         let currentInfected = SimulationController.shared.getInfectedCount()
         let currentGroupSize = parameters.groupSize - currentInfected
         
@@ -119,8 +111,7 @@ extension SimulationViewController: SimulationDelegate {
 
 private extension SimulationViewController {
     
-    func configureApperance() {
-        
+    func configureAppearance() {
         view.addViews([backButton, counterContainerView, stackTotalStatsViews, peopleContainerView])
         counterContainerView.addViews(counterLabel)
         peopleContainerView.addViews(peopleCollectionView)
@@ -145,7 +136,6 @@ private extension SimulationViewController {
     }
     
     func configureLayout() {
-        
         NSLayoutConstraint.activate([
             backButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
             backButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),

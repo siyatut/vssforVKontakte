@@ -19,7 +19,6 @@ struct SimulationParameters {
     }
     
     init(groupSize: Int = 0, infectionFactor: Int = 0, t: Int = 1) {
-        
         self.groupSize = groupSize
         self.infectionFactor = infectionFactor
         self.t = t

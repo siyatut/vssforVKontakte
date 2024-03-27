@@ -10,9 +10,7 @@ import UIKit
 final class PeopleCollectionView: UIView {
     
     // MARK: - Properties
-    
     private let rowCount: CGFloat = 7
-    
     private let feedbackGenerator = UIImpactFeedbackGenerator(style: .light)
 
     private let flowLayout: UICollectionViewFlowLayout = {
@@ -24,18 +22,16 @@ final class PeopleCollectionView: UIView {
     }()
     
     // MARK: - View
-    
     private var collectionView: UICollectionView!
     
     // MARK: - Init
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureApperance()
+        configureAppearance()
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(PeopleCollectionCell.self, forCellWithReuseIdentifier: "PeopleCollectionCell")
@@ -43,9 +39,7 @@ final class PeopleCollectionView: UIView {
     
     
     // MARK: - Public methods
-    
     func reloadCells(at indexes: [Int]) {
-        
         let indexPaths = indexes.map( { IndexPath(item: $0, section: 0)})
         DispatchQueue.main.async {
             self.collectionView.reconfigureItems(at: indexPaths)
@@ -53,10 +47,10 @@ final class PeopleCollectionView: UIView {
     }
 }
 
+// MARK: - Configure appearance and layout
 extension PeopleCollectionView {
     
-    func configureApperance() {
-        
+    func configureAppearance() {
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         addViews(collectionView)
         collectionView.showsVerticalScrollIndicator = false
@@ -75,11 +69,10 @@ extension PeopleCollectionView {
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
-
 extension PeopleCollectionView: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return SimulationController.shared.getHumansSize()
+        return SimulationController.shared.getPeopleSize()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -93,12 +86,11 @@ extension PeopleCollectionView: UICollectionViewDataSource, UICollectionViewDele
         if !SimulationController.shared.getPeopleAtIndex(indexPath.row).checkInfection() {
             feedbackGenerator.impactOccurred()
         }
-        SimulationController.shared.didTapHuman(at: indexPath.row)
+        SimulationController.shared.didTapPerson(at: indexPath.row)
     }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
-
 extension PeopleCollectionView: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
