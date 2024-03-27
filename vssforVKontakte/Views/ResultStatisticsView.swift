@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ResultStatisticsView: UIView {
+final class ResultStatisticsView: UIView {
     
     // MARK: - Properties
     
@@ -26,21 +26,21 @@ class ResultStatisticsView: UIView {
     private let headerLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = .systemFont(ofSize: 12)
+        label.font = .systemFont(ofSize: 15)
         return label
     }()
     
     private let valuePeople: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = .boldSystemFont(ofSize: 16)
+        label.font = .boldSystemFont(ofSize: 25)
         return label
     }()
     
     private let percentValuePeople: UILabel = {
         let label = UILabel()
         label.textColor = .white
-        label.font = .systemFont(ofSize: 8)
+        label.font = .systemFont(ofSize: 15)
         return label
     }()
     
@@ -60,9 +60,9 @@ class ResultStatisticsView: UIView {
         headerLabel.text = label
     }
     
-    // MARK: - Methods
+    // MARK: - Public methods
     
-    func reloadViews(_ newValue: Int) {
+    func reloadView(_ newValue: Int) {
         valuePeople.text = "\(newValue)"
         let percentValue: Double
         if startValue == 0 {

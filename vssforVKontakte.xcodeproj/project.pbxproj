@@ -19,6 +19,10 @@
 		528FA30B2BB30325009794AD /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA30A2BB30325009794AD /* People.swift */; };
 		528FA30D2BB31D9B009794AD /* ResultStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA30C2BB31D9B009794AD /* ResultStatisticsView.swift */; };
 		528FA30F2BB32379009794AD /* ExtensionUIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA30E2BB32379009794AD /* ExtensionUIViews.swift */; };
+		528FA3112BB32D93009794AD /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA3102BB32D93009794AD /* SimulationViewController.swift */; };
+		528FA3132BB32E43009794AD /* PeopleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA3122BB32E43009794AD /* PeopleCollectionView.swift */; };
+		528FA3152BB32E82009794AD /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA3142BB32E82009794AD /* PeopleCollectionViewCell.swift */; };
+		528FA3172BB32F19009794AD /* SimulationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528FA3162BB32F19009794AD /* SimulationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		528FA30A2BB30325009794AD /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
 		528FA30C2BB31D9B009794AD /* ResultStatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultStatisticsView.swift; sourceTree = "<group>"; };
 		528FA30E2BB32379009794AD /* ExtensionUIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUIViews.swift; sourceTree = "<group>"; };
+		528FA3102BB32D93009794AD /* SimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		528FA3122BB32E43009794AD /* PeopleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionView.swift; sourceTree = "<group>"; };
+		528FA3142BB32E82009794AD /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
+		528FA3162BB32F19009794AD /* SimulationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +115,10 @@
 			children = (
 				523EBCEA2BAD8877008624CE /* AppDelegate.swift */,
 				523EBCEC2BAD8877008624CE /* SceneDelegate.swift */,
-				523EBCEE2BAD8877008624CE /* InputParametersViewController.swift */,
-				528FA30A2BB30325009794AD /* People.swift */,
-				528FA30C2BB31D9B009794AD /* ResultStatisticsView.swift */,
-				528FA30E2BB32379009794AD /* ExtensionUIViews.swift */,
-				528FA3082BB30190009794AD /* SimulationParameters.swift */,
 				528FA3072BB3015F009794AD /* Controllers */,
+				528FA31A2BB34477009794AD /* Views */,
+				528FA3182BB34425009794AD /* Models */,
+				528FA3192BB34448009794AD /* Extension */,
 				523EBCF32BAD887B008624CE /* Assets.xcassets */,
 				523EBCF52BAD887B008624CE /* LaunchScreen.storyboard */,
 				523EBCF82BAD887B008624CE /* Info.plist */,
@@ -140,8 +146,38 @@
 		528FA3072BB3015F009794AD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				523EBCEE2BAD8877008624CE /* InputParametersViewController.swift */,
+				528FA3162BB32F19009794AD /* SimulationController.swift */,
+				528FA3102BB32D93009794AD /* SimulationViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		528FA3182BB34425009794AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				528FA3082BB30190009794AD /* SimulationParameters.swift */,
+				528FA30A2BB30325009794AD /* People.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		528FA3192BB34448009794AD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				528FA30E2BB32379009794AD /* ExtensionUIViews.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		528FA31A2BB34477009794AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				528FA3142BB32E82009794AD /* PeopleCollectionViewCell.swift */,
+				528FA30C2BB31D9B009794AD /* ResultStatisticsView.swift */,
+				528FA3122BB32E43009794AD /* PeopleCollectionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +312,13 @@
 			files = (
 				523EBCEF2BAD8877008624CE /* InputParametersViewController.swift in Sources */,
 				523EBCEB2BAD8877008624CE /* AppDelegate.swift in Sources */,
+				528FA3172BB32F19009794AD /* SimulationController.swift in Sources */,
 				523EBCED2BAD8877008624CE /* SceneDelegate.swift in Sources */,
 				528FA30D2BB31D9B009794AD /* ResultStatisticsView.swift in Sources */,
 				528FA3092BB30190009794AD /* SimulationParameters.swift in Sources */,
+				528FA3132BB32E43009794AD /* PeopleCollectionView.swift in Sources */,
+				528FA3112BB32D93009794AD /* SimulationViewController.swift in Sources */,
+				528FA3152BB32E82009794AD /* PeopleCollectionViewCell.swift in Sources */,
 				528FA30F2BB32379009794AD /* ExtensionUIViews.swift in Sources */,
 				528FA30B2BB30325009794AD /* People.swift in Sources */,
 			);

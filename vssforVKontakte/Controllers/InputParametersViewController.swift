@@ -7,26 +7,31 @@
 
 import UIKit
 
-class InputParametersViewController: UIViewController, UITextFieldDelegate {
-
+final class InputParametersViewController: UIViewController, UITextFieldDelegate {
+    
     // MARK: - Properties
+    
     let nameMainScreen = UILabel()
     let groupSizeTextField = UITextField()
     let infectionFactorTextField = UITextField()
     let recalculationPeriodTextField = UITextField()
     let runSimulationButton = UIButton()
-
-    // MARK: - Lifecycle Methods
+    
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         setupStackView()
         setupUIcomponents()
         setupNameMainScreen()
     }
-
-    // MARK: - Setup
+    
+    // MARK: - Setup Views
+    
     private func setupUIcomponents() {
+        
         configureTextField(groupSizeTextField, placeholder: "GroupSize")
         configureTextField(infectionFactorTextField, placeholder: "InfectionFactor")
         configureTextField(recalculationPeriodTextField, placeholder: "Recalculation Period (T)")
@@ -50,6 +55,7 @@ class InputParametersViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func setupStackView() {
+        
         let stackView = UIStackView(arrangedSubviews: [groupSizeTextField, infectionFactorTextField, recalculationPeriodTextField, runSimulationButton])
         stackView.axis = .vertical
         stackView.spacing = 15
@@ -57,7 +63,6 @@ class InputParametersViewController: UIViewController, UITextFieldDelegate {
         stackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stackView)
-        
         NSLayoutConstraint.activate([
             stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
@@ -65,6 +70,7 @@ class InputParametersViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func setupNameMainScreen() {
+        
         nameMainScreen.text = "Virus spread simulator"
         nameMainScreen.font = .boldSystemFont(ofSize: 20)
         nameMainScreen.textColor = .black
@@ -76,42 +82,38 @@ class InputParametersViewController: UIViewController, UITextFieldDelegate {
             nameMainScreen.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor)
         ])
     }
-
+    
     private func configureTextField(_ textField: UITextField, placeholder: String) {
+        
         textField.placeholder = placeholder
         textField.borderStyle = .roundedRect
         textField.keyboardType = .numberPad
     }
     
-   
-    // MARK: - Objc func
-    @objc private func runSimulationButtonTapped() {
-        print("Кнопка запустить симуляцию нажата.")
-    }
-    
-    @objc func backgroundTapped(_ sender: UITapGestureRecognizer? = nil) {
+    @objc private func backgroundTapped(_ sender: UITapGestureRecognizer? = nil) {
         view.endEditing(true)
     }
-}
-
-
-
-import SwiftUI
-
-struct FlowProvider: PreviewProvider {
-    static var previews: some View {
-        InputParameters().edgesIgnoringSafeArea(.all)
+    
+    // MARK: - Private methods
+    
+    private func getParameters() -> SimulationParameters {
+        
+        guard let groupSizeText = groupSizeTextField.text, let groupSize = Int(groupSizeText) else {
+            return SimulationParameters()
+        }
+        guard let infectionFactorText = infectionFactorTextField.text, let infectionFactor = Int(infectionFactorText) else {
+            return SimulationParameters()
+        }
+        guard let recalculationPeriodText = recalculationPeriodTextField.text, let t = Int(recalculationPeriodText) else {
+            return SimulationParameters()
+        }
+        return SimulationParameters(groupSize: groupSize, infectionFactor: infectionFactor, t: t)
     }
     
-    struct InputParameters: UIViewControllerRepresentable {
+    @objc private func runSimulationButtonTapped() {
         
-        let firstScreen = InputParametersViewController()
-        func makeUIViewController(context: UIViewControllerRepresentableContext<FlowProvider.InputParameters>) -> InputParametersViewController {
-            return firstScreen
-        }
-        
-        func updateUIViewController(_ uiViewController: FlowProvider.InputParameters.UIViewControllerType, context: UIViewControllerRepresentableContext<FlowProvider.InputParameters>) {
-            
-        }
+        let parameters = getParameters()
+        let simulationViewController = SimulationViewController(parameters: parameters)
+        navigationController?.pushViewController(simulationViewController, animated: true)
     }
 }
